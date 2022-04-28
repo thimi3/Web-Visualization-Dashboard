@@ -1,0 +1,167 @@
+.navbar-default .navbar-brand{
+    color:black;
+    background-color:cornsilk;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 auto;
+}
+
+.navbar-header{
+    width: 400px;
+    margin-left: 75px;
+    background-color: aqua;
+}
+
+.sigline{
+    color: darkblue;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-header .navbar-toggle .collapsed{
+    float: right;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-bottom: black;
+    color:green;
+}
+.navbar li{
+    padding: 0px;
+}
+.navbar ul{
+    padding: 0px;
+}
+
+.post{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+#nav-select{
+    visibility: visible;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: green;
+}
+h6{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color:green;
+    text-align: left;
+    
+}
+
+#imagetext{
+    color: black;
+    font-size: 12px;
+    display: block;
+    width: 95%;
+    height: auto;
+    text-align: justify;
+    margin: 0px 0px, 0px, 0px;
+}
+.box{
+    color: black;
+    
+}
+
+.box-left{
+    padding: 20px;
+}
+
+.box-right{
+    padding: 50px;
+}
+
+.box-single{
+    padding: 50px;
+    margin: 70px;
+}
+
+#summary{
+    margin: 10px;
+    font-size: 17px;
+    line-height: 1.8em;
+}
+
+#landing{
+    padding: 1px 1px 1px 1px;
+    width: 100%;
+    height: 100%;
+}
+
+.figure:active{
+    border: 5px solid orangered;
+}
+#landing-main{
+    padding: 1px 1px 1px 1px;
+    width: 100%;
+}
+
+.row.row-grid [class*="col-"] + [class*="col-"]{
+    margin-top: 30px;
+}
+
+#datatable table{
+    width: 80%;
+    margin-left: 50px;
+}
+#datatable{
+    background-color: white;
+    text-align: center;
+}
+
+#buttonlat{
+    background-color:lightgreen;
+    border: none;
+    margin: 0 auto;
+}
+@media (min-width: 1200px){
+    .row.row-grid [class*="col-md-"] + [class*="col-md-"]{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px){
+    .row.row-grid [class*="col-md-"] + [class*="col-md-"]{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .row.row-grid [class*="col-md-"] + [class*="col-md-"]{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .row.row-grid [class*="col-md-"] + [class*="col-md-"]{
+        margin-top: 0;
+    }
+}
+
+
+   
