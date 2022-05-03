@@ -1,32 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@thimi3 
-thimi3
-/
-Web-Visualization-Dashboard
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Web-Visualization-Dashboard/index.html
-@thimi3
-thimi3 pushing the html files
-Latest commit f8d678c 6 days ago
- History
- 1 contributor
-129 lines (110 sloc)  6.56 KB
-   
+  
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
