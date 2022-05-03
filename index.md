@@ -1,37 +1,171 @@
-## Welcome to GitHub Pages
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@thimi3 
+thimi3
+/
+Web-Visualization-Dashboard
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Web-Visualization-Dashboard/index.html
+@thimi3
+thimi3 pushing the html files
+Latest commit f8d678c 6 days ago
+ History
+ 1 contributor
+129 lines (110 sloc)  6.56 KB
+   
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title> Latitude Weather Analysis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-You can use the [editor on GitHub](https://github.com/thimi3/Web-Visualization-Dashboard/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Add Vue and BootstrapVue scripts just before the closing </body> tag -->
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css"/>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+    <div class="bs-example">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            
+            <button type="button" id="buttonlat">
+                <a href="index.html" class="navbar-brand">Latitude</a>
+    
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plot</a>
+                        <div class="dropdown-menu">
+                            <a target= "__blank" href="temperature.html" class="dropdown-item">Temperature</a>
+                            <a target= "__blank" href="humidity.html" class="dropdown-item">Humidity</a>
+                            <a target= "__blank" href="cloudiness.html" class="dropdown-item">Cloudiness</a>
+                            <a target= "__blank" href="wind_speed.html" class="dropdown-item">Windspeed</a>
+                        </div>
+                    </div>
+                    <a target= "__blank" href="data.html" class="nav-item nav-link ">Data</a>
+                    <a target= "__blank" href="compare.html" class="nav-item nav-link ">Comparison</a>
+                </div>
+                
+            
+            </div>
+        </nav>
+        
+    </div>
+    
+   
 
-### Markdown
+    <div class="container">
+        <div class="row">
+            <div class= "col-md-8">
+                <div class = "box box-left">
+                    <section id="Introduction">
+                        <h1> Summary: Latitude vs. X </h1>
+                        <hr>
+                        <figure>
+                            <a target= "__blank" href="Images/landingResize.png" alt="Latitude vs X">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                            </a>
+                            <img src="Images/Latitude vs. Temperature.png" width="240" height="240"
+                            alt="Latitude vs. Temperature" title="Landing page" style="float: left"/>
+                        </figure>
+                        <section id="Summary">
+                            <p> The goal of this website is to analyze how weather changes depending on the location.
+                                We accomplish this analysis, we fuse the API from OpenWeatherMap API to collect the dataset across different cities.
+                            </p>
+                            <p> The data was collected and stored. using Matplotlib, we plot different aspects of the weather tude
+                                Factors we looked at included: temperature, cloudiness, wind_speed and humidity. 
+                            </p>
+                            <ul>
+                                <li> Max Temperature(F) vs. City Latitude</li>
+                                <li> Humidity (%) vs. City Latitude</li>
+                                <li> Cloudiness (%) vs. City Latitude</li>
+                                <li>Wind Speed (mph) vs. City Latitude</li> 
 
-```markdown
-Syntax highlighted code block
+                            </ul>
+                        </section>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class= "box box-right">
+                    <h6> Visualizations</h6>
+                    <hr>
+                    <div class ="row">
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a target="__blank" href= "temperature.html">
+                                    <img id="landing" src="Images/Latitude vs. Temperature.png" alt="City Latitude vs. Temperature">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a target="__blank" href="humidity.html">
+                                    <img id="landing" src="Images/Latitude vs. Humidity.png" alt="City Latitude vs. Humidity">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a target="__blank" href="cloudiness.html">
+                                    <img id="landing" src="Images/Latitude vs. Cloudiness.png" alt="City Latitude vs. Cloudiness">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a target="__blank" href="wind_speed.html">
+                                    <img id="landing" src="Images/Latitude vs. Windspeed.png" alt="City Latitude vs. Windspeed">
+                                </a>
+                            </figure>
+                        </div>
 
-# Header 1
-## Header 2
-### Header 3
+                    </div>
 
-- Bulleted
-- List
+                </div>
+            </div>
+        </div>
+    </div>
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thimi3/Web-Visualization-Dashboard/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
